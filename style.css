@@ -1,3 +1,4 @@
+/* folha de estilo página INÍCIO*/
 body{
     font-family: 'Cabin Condensed', sans-serif;
 }
@@ -105,4 +106,26 @@ footer p {
     color: #ffc300;
     font-size: 13px;
     margin: 20px 0 0;
+}
+
+
+/* Folha de estilo da página CONTATO */
+
+form {
+    vertical-align: baseline;
+    width: 35%;
+    margin: 40px auto;
+
+}
+
+form label {
+    display: block;
+    margin: 10px 0 0;
+}
+
+.input-padrao {
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+
 }
