@@ -112,13 +112,13 @@ footer p {
 /* Folha de estilo da página CONTATO */
 
 form {
-    vertical-align: baseline;
+
     width: 35%;
     margin: 40px auto;
 
 }
 
-form label {
+form label, fieldset label, fieldset select {
     display: block;
     margin: 10px 0 0;
 }
@@ -127,5 +127,48 @@ form label {
     display: block;
     padding: 5px 10px;
     width: 100%;
+}
 
+fieldset{
+    margin: 40px auto;
+}
+
+.checkbox{
+    margin: 40px auto;
+}
+
+.enviar{
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: #001d3d ;
+    color: white;
+    width: 100%;
+    margin: 10px auto;
+
+}
+.enviar:hover{
+    box-shadow: 20px 15px 16px 0 #3f3f44;
+}
+
+h3{
+    text-align: center;
+
+}
+
+table{
+    margin: 10px auto 40px;
+    
+}
+
+th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+    font-weight: bold;
+}
+
+td {
+	border: 1px solid #000000;
+	padding: 8px 15px;
 }

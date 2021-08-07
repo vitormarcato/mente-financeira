@@ -1,56 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Mente Financeira</title>
-        
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="bloco-navegacao">
-                <img src="Logo.png" alt="logo-mente-financeira" class="logo">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="investimentos.html">Investimentos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header> 
-        
-        <main>
-            <form>
-                <label for="primeiroNome">Nome</label>
-                <input type="text" class="input-padrao">
-                
-                <label for="ultimoNome">Sobrnome</label>
-                <input type="text"class="input-padrao">
-                
-                <label for="email">E-mail</label>
-                <input type="email" class="input-padrao">
-                
-                <label for="telefone">Telefone</label>
-                <input type="number" class="input-padrao">
-                
-                <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" class="input-padrao"></textarea>                
-            </form>
-    
-        </main>
-        
-        <footer>
-            <img class="logo-footer" src="Logo.png" alt="logo-mente-financeira">
-            <p>mente financeira</p>
-        </footer>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mente Financeira</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="bloco-navegacao">
+            <img src="Logo.png" alt="logo-mente-financeira" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="investimentos.html">Investimentos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="primeiroNome">Nome</label>
+            <input type="text" class="input-padrao" required placeholder="Primeiro nome">
+
+            <label for="ultimoNome">Sobrnome</label>
+            <input type="text" class="input-padrao" required placeholder="Último nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="number" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" class="input-padrao" required placeholder="Escreva sua mensagem"></textarea>
+
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email"
+                        id="radio-email">E-mail</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser respondido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades por
+                email?</label>
+
+            <input type="submit" value="Enviar" class="enviar">           
+        </form>
+
+        <h3>Horário de atendimento</h3>
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Hora</th>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>8h até 17h</td>
+            </tr>
+            <tr>
+                <td>Terça</td>
+                <td>8h até 17h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h até 17h</td>
+            </tr>
+            <tr>
+                <td>Quinta</td>
+                <td>8h até 17h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h até 17h</td>
+            </tr>
+
+        </table>
+    </main>
+
+    <footer>
+        <img class="logo-footer" src="Logo.png" alt="logo-mente-financeira">
+        <p>mente financeira</p>
+    </footer>
+</body>
+
 </html>
